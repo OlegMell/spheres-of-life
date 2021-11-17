@@ -1,0 +1,17 @@
+<app-header [openInfo$]="openInfo$"></app-header>
+
+<app-entry-card [openInfo$]="openInfo$"></app-entry-card>
+
+<main class="content">
+  <div class="container">
+
+    <div class="form-wrapper">
+      <app-spheres-form [graph$]="graph$"></app-spheres-form>
+    </div>
+
+    <div class="graph-wrapper">
+      <app-graph [graph$]="graph$"></app-graph>
+    </div>
+
+  </div>
+</main>

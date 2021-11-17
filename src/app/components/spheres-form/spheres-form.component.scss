@@ -1,0 +1,33 @@
+.mat-card {
+  margin-top: 10px;
+  margin-left: 10px;
+
+  @media(max-width: 1001px) {
+    margin-left: 0;
+  }
+
+  .spheres-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media(max-width: 1001px) {
+      justify-content: space-between;
+
+    }
+
+    .mat-form-field {
+      margin: 0 10px;
+      width: 90%;
+
+      @media(max-width: 1001px) {
+        width: 25%;
+        margin: 0 5px;
+      }
+    }
+
+    &_submit-btn {
+      margin: 0 auto;
+    }
+  }
+}

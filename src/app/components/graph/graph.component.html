@@ -1,0 +1,17 @@
+<div class="graph" (window:resize)="onResize()">
+
+  <app-info-box *ngIf="!pieChartData || (pieChartData && !pieChartData.length)" message="Заполните сферы жизни от 1 до 10, чтобы увидеть график"></app-info-box>
+
+  <div *ngIf="(pieChartData && pieChartData.length)" class="graph-title">Ваш результат</div>
+
+  <canvas baseChart
+          *ngIf="pieChartData && pieChartData.length"
+          class="graph-canvas"
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [legend]="pieChartLegend">
+  </canvas>
+</div>

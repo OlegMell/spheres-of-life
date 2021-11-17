@@ -1,0 +1,67 @@
+<mat-card class="mat-elevation-z3">
+  <form [formGroup]="spheresForm" class="spheres-form">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Духовность</mat-label>
+      <input type="text"
+             formControlName="spirituality"
+             matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Работа</mat-label>
+      <input type="text"
+             formControlName="job"
+             matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Семья</mat-label>
+      <input type="text"
+             formControlName="family"
+             matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Здоровье</mat-label>
+      <input type="text"
+             formControlName="health"
+             matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Отдых</mat-label>
+      <input type="text"
+             formControlName="recreation"
+             matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Друзья</mat-label>
+      <input type="text"
+             formControlName="friends"
+             matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Хобби</mat-label>
+      <input type="text"
+             formControlName="hobby"
+             matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Саморазвитие</mat-label>
+      <input type="text"
+             formControlName="selfDev"
+             matInput>
+    </mat-form-field>
+
+    <button mat-raised-button
+            [disabled]="!spheresForm.dirty || spheresForm.invalid"
+            class="spheres-form_submit-btn"
+            (click)="creatGraph()"
+            color="primary">Получить график</button>
+
+  </form>
+</mat-card>

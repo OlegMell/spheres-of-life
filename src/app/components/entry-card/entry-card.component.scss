@@ -1,0 +1,93 @@
+.background {
+  z-index: 9999;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  backdrop-filter: blur(2px);
+  background-color: rgba(grey, .5);
+}
+
+.entry-card {
+  max-width: 400px;
+  margin: auto;
+
+  &-header {
+    align-items: center;
+    display: flex;
+  }
+
+  &-header-image {
+    background-image: url('https://image.flaticon.com/icons/png/512/122/122454.png');
+    background-size: cover;
+  }
+
+  &-text {
+    &-title {
+      font-weight: 500;
+      font-size: 22px;
+    }
+  }
+}
+
+.scale-out-center {
+  -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+}

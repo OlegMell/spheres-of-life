@@ -1,0 +1,21 @@
+.info-box {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(#673ab7, .3);
+  height: 150px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  padding: 10px;
+
+  @media(max-width: 1001px) {
+    margin-left: 0;
+  }
+
+  &_message {
+    margin: auto;
+  }
+}

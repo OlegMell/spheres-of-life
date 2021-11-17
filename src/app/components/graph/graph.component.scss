@@ -1,0 +1,29 @@
+.graph {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+
+  @media(max-width: 1001px) {
+    margin-top: 20px;
+  }
+
+  &-canvas {
+    margin-top: 10px;
+    @media(max-width: 1001px) {
+      height: 100% !important;
+      width: 100% !important;
+    }
+  }
+
+  &-title {
+    font-weight: 500;
+    margin-left: 20px;
+    font-size: 20px;
+
+    @media(max-width: 1001px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
