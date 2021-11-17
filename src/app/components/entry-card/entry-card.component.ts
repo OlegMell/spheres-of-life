@@ -10,7 +10,7 @@ import { takeUntil } from "rxjs/operators";
 export class EntryCardComponent implements OnInit, OnDestroy {
   private uns$: Subject<void> = new Subject<void>();
 
-  isClosed: boolean = true;
+  isClosed: boolean = false;
 
   @Input() openInfo$!: Subject<void>;
 
