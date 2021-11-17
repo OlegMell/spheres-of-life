@@ -1,6 +1,7 @@
 .mat-card {
   margin-top: 10px;
   margin-left: 10px;
+  padding: 10px;
 
   @media(max-width: 1001px) {
     margin-left: 0;
@@ -12,11 +13,11 @@
     align-items: center;
 
     @media(max-width: 1001px) {
-      justify-content: space-between;
-
+      align-items: center;
     }
 
     .mat-form-field {
+      flex: 1;
       margin: 0 10px;
       width: 90%;
 
@@ -27,7 +28,12 @@
     }
 
     &_submit-btn {
+      display: block;
       margin: 0 auto;
+
+      @media(max-width: 1001px) {
+        margin: 0 5px;
+      }
     }
   }
 }

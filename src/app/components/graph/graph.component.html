@@ -1,6 +1,7 @@
 <div class="graph" (window:resize)="onResize()">
 
-  <app-info-box *ngIf="!pieChartData || (pieChartData && !pieChartData.length)" message="Заполните сферы жизни от 1 до 10, чтобы увидеть график"></app-info-box>
+  <app-info-box *ngIf="!pieChartData || (pieChartData && !pieChartData.length)"
+                message="Оцените сферы своей жизни от 1 до 10 по степени удовлетворенности, чтобы увидеть график"></app-info-box>
 
   <div *ngIf="(pieChartData && pieChartData.length)" class="graph-title">Ваш результат</div>
 
