@@ -1,0 +1,19 @@
+.spheres-descr {
+  margin-left: 10px;
+
+  &_ex-panel {
+    margin-left: 20px;
+
+    //.spirit {
+    //  background-color: rgba(#F88E90, .5)
+    //}
+
+    &_bold {
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      margin-left: 0;
+    }
+  }
+}

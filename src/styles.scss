@@ -10,9 +10,18 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.mat-card {
+  padding: 10px !important;
+}
+
 .mat-card-header .mat-cart-title {
   margin-bottom: 0 !important;
 }
+
+.mat-horizontal-content-container {
+  padding: 0 !important;
+}
+
 
 .app {
   &-container {

@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
 import { GraphComponent } from "./components/graph/graph.component";
 import { InfoBoxComponent } from "./components/info-box/info-box.component";
+import { SpheresDescrComponent } from "./components/spheres-descr/spheres-descr.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InfoBoxComponent } from "./components/info-box/info-box.component";
     EntryCardComponent,
     SpheresFormComponent,
     GraphComponent,
-    InfoBoxComponent
+    InfoBoxComponent,
+    SpheresDescrComponent
   ],
   imports: [
     BrowserModule,

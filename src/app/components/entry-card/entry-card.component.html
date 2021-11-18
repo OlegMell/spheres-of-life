@@ -1,32 +1,74 @@
 <div class="background"
      [class.scale-out-center]="isClosed"
      [class.scale-in-center]="!isClosed">
-  <mat-card class="entry-card scale-in-center mat-elevation-z8" (click)="$event.stopPropagation()">
 
-    <mat-card-header class="entry-card-header">
-      <div mat-card-avatar class="entry-card-header-image"></div>
-      <mat-card-title>Специалист</mat-card-title>
-    </mat-card-header>
+  <mat-horizontal-stepper class="stepper">
 
-    <img mat-card-image src="https://goal-life.com/img/main/page/method/koleso/wheel_life_online.png" alt="life circle">
+    <mat-step label="Что такое '8 Сфер Жизни?'">
+      <mat-card class="stepper_entry-card scale-in-center mat-elevation-z8" (click)="$event.stopPropagation()">
 
-    <mat-card-content>
-      <p class="entry-card-text">
-        <span class="entry-card-text-title">Метод «8 сфер жизни» позволяет:</span>
+        <mat-card-header class="stepper_entry-card-header">
+          <div mat-card-avatar class="stepper_entry-card-header-image"></div>
+          <mat-card-title>Специалист</mat-card-title>
+        </mat-card-header>
 
-        <mat-list>
-          <mat-list-item> прояснить, что для вас главное в жизни, а что нет;</mat-list-item>
-          <mat-list-item> выявить «Что со мной не так?»;</mat-list-item>
-          <mat-list-item> осознать насколько вы счастливы, и как это улучшить;</mat-list-item>
-          <mat-list-item> направить ваше внимание и усилия на решение проблемных мест.</mat-list-item>
-        </mat-list>
+        <img mat-card-image src="https://goal-life.com/img/main/page/method/koleso/wheel_life_online.png"
+             alt="life circle">
 
-      </p>
-    </mat-card-content>
+        <mat-card-content>
+          <p class="stepper_entry-card-text">
+            <span class="stepper_entry-card-text-title">Метод «8 сфер жизни» позволяет:</span>
 
-    <mat-card-actions>
-      <button (click)="isClosed = true" mat-stroked-button mat-button>Попробовать!</button>
-    </mat-card-actions>
+            <mat-list>
+              <mat-list-item> прояснить, что для вас главное в жизни, а что нет;</mat-list-item>
+              <mat-list-item> выявить «Что со мной не так?»;</mat-list-item>
+              <mat-list-item> осознать насколько вы счастливы, и как это улучшить;</mat-list-item>
+              <mat-list-item> направить ваше внимание и усилия на решение проблемных мест.</mat-list-item>
+            </mat-list>
 
-  </mat-card>
+          </p>
+        </mat-card-content>
+
+        <button mat-button matStepperNext>Далее</button>
+      </mat-card>
+
+    </mat-step>
+
+    <mat-step label="Как заполнять?">
+      <mat-card class="stepper_entry-card scale-in-center mat-elevation-z8" (click)="$event.stopPropagation()">
+
+        <mat-card-header class="stepper_entry-card-header">
+          <div mat-card-avatar class="stepper_entry-card-header-image"></div>
+          <mat-card-title>Специалист</mat-card-title>
+        </mat-card-header>
+
+        <img mat-card-image src="https://goal-life.com/img/main/page/method/koleso/wheel_life_online.png"
+             alt="life circle">
+
+        <mat-card-content>
+          <p class="stepper_entry-card-text">
+            <span class="stepper_entry-card-text-title">Как это работает?</span>
+
+            <mat-list>
+              <mat-list-item> График позволит отобразить наглядно вашу удовлетворенность в сферах жизни и понять насколько они сбалансированы </mat-list-item>
+              <br>
+              <mat-list-item> Выставляйте оценку сфере быстро. Не нужно долго раздумывать </mat-list-item>
+              <mat-list-item> Ориентируйтесь на свои ощущения при оценивании </mat-list-item>
+            </mat-list>
+
+          </p>
+        </mat-card-content>
+
+        <button mat-button matStepperPrevious>Назад</button>
+        <button mat-button (click)="isClosed = true">Попробовать!</button>
+
+      </mat-card>
+
+
+    </mat-step>
+
+  </mat-horizontal-stepper>
+
 </div>
+
+
