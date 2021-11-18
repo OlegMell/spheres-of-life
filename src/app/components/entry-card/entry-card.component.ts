@@ -10,7 +10,7 @@ import { takeUntil } from "rxjs/operators";
 export class EntryCardComponent implements OnInit, OnDestroy {
   private uns$: Subject<void> = new Subject<void>();
 
-  isClosed: boolean = true;
+  isClosed: boolean = false;
 
   @Input() openInfo$!: Subject<void>;
 
@@ -24,10 +24,10 @@ export class EntryCardComponent implements OnInit, OnDestroy {
       .subscribe(() => this.isClosed = false);
   }
 
-  // @HostListener('click', [ '$event.target' ])
-  // onClick(e: Event) {
-  //   this.isClosed = true;
-  // }
+  @HostListener('click', [ '$event.target' ])
+  onClick(e: Event) {
+    this.isClosed = true;
+  }
 
   ngOnDestroy(): void {
     this.uns$.next();

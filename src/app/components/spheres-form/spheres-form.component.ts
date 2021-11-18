@@ -19,8 +19,6 @@ export class SpheresFormComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit() {
     this.createForm();
-
-
   }
 
   ngAfterViewInit() {
