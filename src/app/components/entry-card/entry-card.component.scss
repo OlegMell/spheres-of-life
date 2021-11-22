@@ -36,6 +36,10 @@
         }
       }
 
+      &_btn {
+        margin: 0 10px;
+      }
+
       .mat-list-base {
         @media (max-width: 600px) {
           padding-top: 20px;

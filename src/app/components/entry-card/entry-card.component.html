@@ -2,9 +2,9 @@
      [class.scale-out-center]="isClosed"
      [class.scale-in-center]="!isClosed">
 
-  <mat-horizontal-stepper class="stepper">
+  <mat-horizontal-stepper (click)="$event.stopPropagation()" class="stepper">
 
-    <mat-step label="Что такое '8 Сфер Жизни?'">
+    <mat-step (click)="$event.stopPropagation()" label="Что такое '8 Сфер Жизни?'">
       <mat-card class="stepper_entry-card scale-in-center mat-elevation-z8" (click)="$event.stopPropagation()">
 
         <mat-card-header class="stepper_entry-card-header">
@@ -29,12 +29,12 @@
           </p>
         </mat-card-content>
 
-        <button mat-button matStepperNext>Далее</button>
+        <button mat-button mat-stroked-button matStepperNext>Далее</button>
       </mat-card>
 
     </mat-step>
 
-    <mat-step label="Как заполнять?">
+    <mat-step (click)="$event.stopPropagation()" label="Как заполнять?">
       <mat-card class="stepper_entry-card scale-in-center mat-elevation-z8" (click)="$event.stopPropagation()">
 
         <mat-card-header class="stepper_entry-card-header">
@@ -59,8 +59,14 @@
           </p>
         </mat-card-content>
 
-        <button mat-button matStepperPrevious>Назад</button>
-        <button mat-button (click)="isClosed = true">Попробовать!</button>
+        <button mat-button
+                mat-stroked-button
+                class="stepper_btn"
+                matStepperPrevious>Назад</button>
+        <button mat-button
+                mat-stroked-button
+                class="stepper_entry-card_btn"
+                (click)="isClosed = true">Попробовать!</button>
 
       </mat-card>
 
