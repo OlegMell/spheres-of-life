@@ -8,8 +8,9 @@ import { Graph } from "../../models/graph.model";
   templateUrl: './spheres-form.component.html',
   styleUrls: [ './spheres-form.component.scss' ]
 })
-export class SpheresFormComponent implements OnInit, AfterViewInit, OnDestroy {
+export class SpheresFormComponent implements OnInit, OnDestroy {
   spheresForm!: FormGroup;
+
   @Input() graph$!: Subject<Graph>;
 
   constructor(
@@ -19,17 +20,6 @@ export class SpheresFormComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit() {
     this.createForm();
-  }
-
-  ngAfterViewInit() {
-    // document.querySelector('.number_input').addEventListener('focus', function (evt) {
-    //   evt.target.select();
-    //   if ('ontouchstart' in window) {
-    //     setTimeout(function() {
-    //       evt.target.setSelectionRange(0, 9999);
-    //     }, 1);
-    //   }
-    // }, true);
   }
 
   private createForm(): void {
