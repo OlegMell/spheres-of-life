@@ -14,7 +14,6 @@ import { MatExpansionModule } from "@angular/material/expansion";
   declarations: [
   ],
   imports: [
-    MatToolbarModule
   ],
   exports: [
     MatStepperModule,
@@ -26,7 +25,7 @@ import { MatExpansionModule } from "@angular/material/expansion";
     MatCardModule,
     MatListModule,
     MatTooltipModule,
-    MatExpansionModule
+    MatExpansionModule,
   ],
 })
 export class MaterialModule { }
