@@ -1,27 +1,21 @@
-# SpheresOfLife
+# 8 Spheres Of Life
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+This app allows you to chart the satisfaction of 8 areas of your life.
+Assess each area to see which ones are better developed and which ones are worse.
+
+Available as PWA (Progressive Web Application)
+
+## Deployed on Heroku
+[spheres of life](https://spheres-of-life.herokuapp.com/)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+OR
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
+Run `npm run local` for the same.
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
