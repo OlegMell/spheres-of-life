@@ -14,6 +14,8 @@ import { MatInputModule } from "@angular/material/input";
 import { GraphComponent } from "./components/graph/graph.component";
 import { InfoBoxComponent } from "./components/info-box/info-box.component";
 import { SpheresDescrComponent } from "./components/spheres-descr/spheres-descr.component";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,13 @@ import { SpheresDescrComponent } from "./components/spheres-descr/spheres-descr.
     ChartsModule,
     MaterialModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
