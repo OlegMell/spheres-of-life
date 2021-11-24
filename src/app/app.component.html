@@ -1,21 +1,24 @@
-<app-header [openInfo$]="openInfo$"></app-header>
+<div class="mat-app-background app">
+  <app-header (changeThemeEvent)="onThemeChanged($event)" [openInfo$]="openInfo$"></app-header>
 
-<app-entry-card [openInfo$]="openInfo$"></app-entry-card>
+  <app-entry-card [openInfo$]="openInfo$"></app-entry-card>
 
-<main class="content">
-  <div class="container">
+  <main class="content">
+    <div class="container">
 
-    <div class="form-wrapper">
-      <app-spheres-form [graph$]="graph$"></app-spheres-form>
+      <div class="form-wrapper">
+        <app-spheres-form [graph$]="graph$"></app-spheres-form>
+      </div>
+
+      <div class="graph-wrapper">
+
+        <app-spheres-descr></app-spheres-descr>
+
+        <app-graph [graph$]="graph$"></app-graph>
+
+      </div>
+
     </div>
+  </main>
 
-    <div class="graph-wrapper">
-
-      <app-spheres-descr></app-spheres-descr>
-
-      <app-graph [graph$]="graph$"></app-graph>
-
-    </div>
-
-  </div>
-</main>
+</div>
