@@ -5,6 +5,8 @@ Assess each area to see which ones are better developed and which ones are worse
 
 Available as PWA (Progressive Web Application)
 
+Available dark theme. You can change theme manually or change theme on your device and app will automatically set own theme by device theme
+
 ## Deployed on Heroku
 [spheres of life](https://spheres-of-life.herokuapp.com/)
 
