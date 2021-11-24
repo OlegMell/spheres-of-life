@@ -5,10 +5,16 @@
       <span>8 Сфер Жизни</span>
     </div>
 
-    <div>
+    <div class="btns">
+
+      <mat-slide-toggle matTooltip="Ночь" [formControl]="toggleControl">
+        <mat-icon>dark_mode</mat-icon>
+      </mat-slide-toggle>
+
       <button mat-icon-button (click)="openInfo$.next()">
         <mat-icon>help_outline</mat-icon>
       </button>
+
     </div>
 
   </div>

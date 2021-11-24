@@ -16,6 +16,7 @@ import { InfoBoxComponent } from "./components/info-box/info-box.component";
 import { SpheresDescrComponent } from "./components/spheres-descr/spheres-descr.component";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { MATERIAL_SANITY_CHECKS } from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { environment } from '../environments/environment';
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
